@@ -10,13 +10,25 @@ use Ema\EmaBlogBundle\Entity\Post;
 
 class BlogController extends Controller
 {
-    public function indexAction()
+	public function indexAction()
     {
-        return $this->render('EmaBlogBundle:Blog:index.html.twig');
+		return $this->render('EmaBlogBundle:Blog:index.html.php');
     }
 
-    public function postAction($id)
+    public function listAction()
     {
+		$posts = $this->getDoctrine()->getManager()
+			->createQuery('SELECT p FROM EmaBlogBundle:Post p')
+			->execute();
+
+		return $this->render(
+			'EmaBlogBundle:Blog:list.html.twig',
+			array('posts' => $posts)
+        );
+    }
+
+   public function postAction($id)
+   {
 		$post = $this->getDoctrine()
 			->getRepository('EmaBlogBundle:Post')
 			->find($id);

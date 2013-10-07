@@ -6,6 +6,11 @@ index:
     pattern: /
     defaults: { _controller: EmaBlogBundle:Blog:index }
 
+index:
+    pattern: /list
+    defaults: { _controller: EmaBlogBundle:Blog:list }
+
+
 post:
     pattern: /post/{id}
     defaults: { _controller: EmaBlogBundle:Blog:post }
