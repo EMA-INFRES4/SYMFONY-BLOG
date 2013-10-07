@@ -1,0 +1,7 @@
+parameters:
+#    ema_user.example.class: Ema\UserBundle\Example
+
+services:
+#    ema_user.example:
+#        class: %ema_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
