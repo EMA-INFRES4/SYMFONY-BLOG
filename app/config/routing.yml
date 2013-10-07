@@ -1,0 +1,4 @@
+ema_blog:
+    resource: "@EmaBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+

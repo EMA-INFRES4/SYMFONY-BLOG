@@ -1,0 +1,11 @@
+ema_blog_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: EmaBlogBundle:Default:index }
+
+index:
+    pattern: /
+    defaults: { _controller: EmaBlogBundle:Blog:index }
+
+post:
+    pattern: /post/{id}
+    defaults: { _controller: EmaBlogBundle:Blog:post }
