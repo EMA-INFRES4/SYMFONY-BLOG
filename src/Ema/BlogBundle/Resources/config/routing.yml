@@ -10,7 +10,10 @@ index:
     pattern: /list
     defaults: { _controller: EmaBlogBundle:Blog:list }
 
-
 post:
     pattern: /post/{id}
     defaults: { _controller: EmaBlogBundle:Blog:post }
+
+edit:
+    pattern: /edit/{id}
+    defaults: { _controller: EmaBlogBundle:Blog:edit , id: 0}

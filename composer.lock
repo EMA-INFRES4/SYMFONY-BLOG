@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e114478ff62c98148ec5dd224a5d3554",
+    "hash": "72c2a13658183d9e37366e7bf9864eb6",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -771,6 +771,180 @@
                 "sql"
             ],
             "time": "2013-04-26 18:42:52"
+        },
+        {
+            "name": "jms/aop-bundle",
+            "version": "1.0.0",
+            "target-dir": "JMS/AopBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/JMSAopBundle.git",
+                "reference": "8ef7db0043188f58da18f931937008f95b308921"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/JMSAopBundle/zipball/8ef7db0043188f58da18f931937008f95b308921",
+                "reference": "8ef7db0043188f58da18f931937008f95b308921",
+                "shasum": ""
+            },
+            "require": {
+                "jms/cg": "1.0.0",
+                "symfony/framework-bundle": "2.*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "JMS\\AopBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "http://jmsyst.com",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Adds AOP capabilities to Symfony2",
+            "keywords": [
+                "annotations",
+                "aop"
+            ],
+            "time": "2012-01-02 20:50:26"
+        },
+        {
+            "name": "jms/cg",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/cg-library.git",
+                "reference": "ce8ef43dd6bfe6ce54e5e9844ab71be2343bf2fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/cg-library/zipball/ce8ef43dd6bfe6ce54e5e9844ab71be2343bf2fc",
+                "reference": "ce8ef43dd6bfe6ce54e5e9844ab71be2343bf2fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "CG\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "http://jmsyst.com",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Toolset for generating PHP code",
+            "keywords": [
+                "code generation"
+            ],
+            "time": "2012-01-02 20:40:52"
+        },
+        {
+            "name": "jms/metadata",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/metadata.git",
+                "reference": "84088bc4f6e2387ec8b549bffc1e037107572f5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/metadata/zipball/84088bc4f6e2387ec8b549bffc1e037107572f5a",
+                "reference": "84088bc4f6e2387ec8b549bffc1e037107572f5a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Metadata\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "http://jmsyst.com",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Class/method/property metadata management in PHP",
+            "keywords": [
+                "annotations",
+                "metadata",
+                "xml",
+                "yaml"
+            ],
+            "time": "2012-01-02 21:32:49"
+        },
+        {
+            "name": "jms/security-extra-bundle",
+            "version": "1.1.0",
+            "target-dir": "JMS/SecurityExtraBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/JMSSecurityExtraBundle.git",
+                "reference": "3730eb131ecf7c8952af729f93db19ac4d98e1cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/JMSSecurityExtraBundle/zipball/3730eb131ecf7c8952af729f93db19ac4d98e1cd",
+                "reference": "3730eb131ecf7c8952af729f93db19ac4d98e1cd",
+                "shasum": ""
+            },
+            "require": {
+                "jms/aop-bundle": "1.0.*",
+                "jms/metadata": "1.1.*",
+                "symfony/framework-bundle": "2.*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "JMS\\SecurityExtraBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "http://jmsyst.com",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Enhances the Symfony2 Security Component by adding several new features",
+            "keywords": [
+                "annotations",
+                "authorization"
+            ],
+            "time": "2012-01-02 21:38:12"
         },
         {
             "name": "kriswallsmith/assetic",
