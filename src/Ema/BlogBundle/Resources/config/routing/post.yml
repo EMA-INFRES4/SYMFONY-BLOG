@@ -1,0 +1,30 @@
+post:
+    pattern:  /
+    defaults: { _controller: "EmaBlogBundle:Post:index" }
+
+post_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "EmaBlogBundle:Post:show" }
+
+post_new:
+    pattern:  /new
+    defaults: { _controller: "EmaBlogBundle:Post:new" }
+
+post_create:
+    pattern:  /create
+    defaults: { _controller: "EmaBlogBundle:Post:create" }
+    requirements: { _method: post }
+
+post_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "EmaBlogBundle:Post:edit" }
+
+post_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "EmaBlogBundle:Post:update" }
+    requirements: { _method: post|put }
+
+post_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "EmaBlogBundle:Post:delete" }
+    requirements: { _method: post|delete }

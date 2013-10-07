@@ -2,18 +2,22 @@ ema_blog_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: EmaBlogBundle:Default:index }
 
-index:
-    pattern: /
-    defaults: { _controller: EmaBlogBundle:Blog:index }
+EmaBlogBundle_post:
+    resource: "@EmaBlogBundle/Resources/config/routing/post.yml"
+    prefix:   /post
 
-index:
-    pattern: /list
-    defaults: { _controller: EmaBlogBundle:Blog:list }
+#index:
+#    pattern: /
+#    defaults: { _controller: EmaBlogBundle:Blog:index }
 
-post:
-    pattern: /post/{id}
-    defaults: { _controller: EmaBlogBundle:Blog:post }
+#index:
+#    pattern: /list
+#    defaults: { _controller: EmaBlogBundle:Blog:list }
 
-edit:
-    pattern: /edit/{id}
-    defaults: { _controller: EmaBlogBundle:Blog:edit , id: 0}
+#post:
+#    pattern: /post/{id}
+#    defaults: { _controller: EmaBlogBundle:Blog:post }
+
+#edit:
+#    pattern: /edit/{id}
+#    defaults: { _controller: EmaBlogBundle:Blog:edit , id: 0}
