@@ -1,6 +1,21 @@
+# Symfony Blog
+## Summary
+This is a blog created with Symfony in EMA's course
+
+## Run the project
+### MAMP user
+```
+# sudo rm /usr/bin/php
+# sudo rm /usr/bin/pear
+# sudo ln -s /Applications/MAMP/bin/php/**phpVERSION**/bin/php /usr/bin/php
+# sudo ln -s /Applications/MAMP/bin/php/**phpVERSION**/bin/pear /usr/bin/pear
+```
+
 ### Install the blog
 ```
-# php composer.phar update install
+# git glone https://github.com/EMA-INFRES4/SYMFONY-BLOG.git
+# cd SYMFONY-BLOG
+# php composer.phar install
 # php app/console doctrine:schema:update --force 
 ```
 ### Create an user
