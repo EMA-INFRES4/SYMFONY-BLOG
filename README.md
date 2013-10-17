@@ -18,7 +18,13 @@ This is a blog created with Symfony in EMA's course
 # php composer.phar install
 # php app/console doctrine:schema:update --force 
 ```
-### Create an user
+### Creating users
+#### Simple user
 ```
 # php app/console fos:user:create xavier xavier@talandier.fr monpasswd
+```
+#### Admin user
+```
+# php app/console fos:user:create god got@talandier.fr monpasswd
+# php app/console fos:user:promote god ROLE_ADMIN
 ```
