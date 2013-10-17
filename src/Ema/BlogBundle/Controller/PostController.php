@@ -8,6 +8,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Ema\BlogBundle\Entity\Post;
 use Ema\BlogBundle\Form\PostType;
 
+use JMS\SecurityExtraBundle\Annotation\Secure;
+
 /**
  * Post controller.
  *
@@ -16,8 +18,7 @@ class PostController extends Controller
 {
 
     /**
-     * Lists all Post entities.
-     *
+     * --(roles="ROLE_ADMIN")
      */
     public function indexAction()
     {

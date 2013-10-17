@@ -19,6 +19,9 @@ class AppKernel extends Kernel
             new Ema\BlogBundle\EmaBlogBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Ema\UserBundle\EmaUserBundle(),
+            new JMS\AopBundle\JMSAopBundle(),
+            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
+            new JMS\DiExtraBundle\JMSDiExtraBundle($this),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
